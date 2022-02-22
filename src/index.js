@@ -1,4 +1,4 @@
-const searchInitial = (input, textField,counterSearch) => {
+const searchInitial = (input, textField, counterSearch) => {
     textField.innerText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
     counterSearch.innerHTML = 0
     const searchTextFull = (text, search) => {
@@ -11,12 +11,10 @@ const searchInitial = (input, textField,counterSearch) => {
             mas.push(textPosition)
         }
         counterSearch.innerHTML = mas.length
-
-
         return mas;
     };
 
-    input.addEventListener('input', () => {
+    input.addEventListener('input', ()=>{
         const searchText = input.value
         const text = textField.innerText
         if (searchText.length === 0) {
@@ -34,16 +32,15 @@ const searchInitial = (input, textField,counterSearch) => {
             position = searchPosition + searchText.length;
         })
         textField.innerHTML += text.slice(position)
-
     })
 }
 
-searchInitial(document.querySelector('.search-input'),document.querySelector('.text'), document.querySelector('.search-counter'))
+
+searchInitial(document.querySelector('.search-input'), document.querySelector('.text'), document.querySelector('.search-counter'))
 
 const droppedMenuRedact = (redact, textField, buttonsMenu, cancel, accept) => {
     const footer = document.querySelector('.footer')
     const input = document.querySelector('.textarea-redact')
-
     const styleRedact = () => {
         buttonsMenu.style.display = "block";
         redact.style.display = "none";
@@ -51,9 +48,9 @@ const droppedMenuRedact = (redact, textField, buttonsMenu, cancel, accept) => {
         textField.style.display = "none";
         input.style.display = "block"
     }
-    let temp = input.value = textField.textContent
+    let tempValue = input.value = textField.textContent
     redact.addEventListener('click', () => {
-       styleRedact()
+        styleRedact()
     })
 
     const hideButtons = () => {
@@ -74,4 +71,4 @@ const droppedMenuRedact = (redact, textField, buttonsMenu, cancel, accept) => {
         textField.innerText = document.querySelector('.textarea-redact').value
     })
 }
-droppedMenuRedact(document.querySelector('.btn-dropped-menu'), document.querySelector('.text'), document.querySelector('.buttons-menu'), document.querySelector('.btn-cancel'), document.querySelector('.btn-accept'))
+droppedMenuRedact(document.querySelector('.btn-dropped-menu'), document.querySelector('.text'), document.querySelector('.buttons-menu'), document.querySelector('.btn-cancel'), document.querySelector('.btn-accept'));

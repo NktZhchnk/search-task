@@ -1,25 +1,26 @@
 .card {
     position: relative;
-    top: 38%;
-    left: 38%;
+    top: 37%;
+    left: 35%;
     width: 463px;
-    height: 185px;
+    height: 175px;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
     padding: 10px;
 
 }
 .textarea-redact{
     width: 422px;
-    height: 125px;
+    height: 127px;
+    padding: 3px;
     resize: none;
     display: none;
     overflow: auto;
+
 }
 
 .footer {
     display: flex;
-    padding: 5px;
-    width: 450px;
+    width: 461px;
     height: 125px;
     border: 1px solid rgba(0, 0, 0, 0.4);
 }
@@ -31,22 +32,24 @@
     width: 27px;
 }
 .btn-dropped-menu{
-
     border: none;
     border-radius: 50%;
     height: 25px;
+    width: 25px;
     margin: 2px;
 }
 .btn-accept{
     border: none;
     border-radius: 50%;
     height: 25px;
+    width: 25px;
     margin: 2px;
 }
 .btn-cancel{
     border: none;
     border-radius: 50%;
     height: 25px;
+    width: 25px;
     margin: 2px;
 }
 .search-input {
@@ -62,6 +65,7 @@
     background-color: rgba(255, 33, 255, 0.3);
 }
 .text {
+    padding: 3px;
     overflow: auto;
 }
 ::-webkit-scrollbar{
@@ -87,7 +91,7 @@
 }
 
 .headerCard {
-    padding-bottom: 10px;
+    padding-top: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
