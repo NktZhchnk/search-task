@@ -5,22 +5,29 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-
-<div class="card">
-    <div class="headerCard">
-        <input class="search-input"/>
-        <div class="search-counter">23</div>
+<div class="mainPage">
+    <div class="div-search">
+        <input class="inputSearch" placeholder="searchInTable"/>
+        <img class="open-search" src="https://emoji-uc.akamaized.net/orig/36/42dfd89cc30f82fc76ebe7fd1ef1fb.png">
     </div>
-    <form></form>
-    <div class="footer">
-        <div class="text"></div><textarea class="textarea-redact"></textarea>
-        <div class="dropped-menu-redact">
-            <button class="btn-dropped-menu">✎</button>
-            <div class="buttons-menu">
-                <button class="btn-accept">✓</button>
-                <button class="btn-cancel">×</button>
-            </div>
-        </div>
+    <div class="title-table">
+        <p class="p">Name</p>
+        <p class="p">Phone</p>
+        <p class="p">Date</p>
+    </div>
+    <div class="div-table">
+        <table class="table">
+            <thead>
+            </thead>
+            <tbody class="tbody">
+            </tbody>
+        </table>
+    </div>
+    <div class="div-form-add-in-table">
+        <input class="nameValue" placeholder="nameValue"/>
+        <input class="phoneValue" placeholder="phoneValue" type="number"/>
+        <input class="priceValue" placeholder="priceValue"/>
+        <button class="btnInTable">add</button>
     </div>
 </div>
 <script src="main.js"></script>
